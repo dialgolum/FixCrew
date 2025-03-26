@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2196F3"
-    tools:context=".LoginActivity">
+    tools:context=".SignupActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:layout_marginBottom="24dp"/>
 
         <TextView
-            android:id="@+id/tvLogoLogin"
+            android:id="@+id/tvLogoSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FixCrew"
@@ -66,7 +66,7 @@
                             android:layout_width="0dp"
                             android:layout_height="35dp"
                             android:background="@null"
-                            android:hint="Username"
+                            android:hint="Name"
                             android:inputType="text"
                             android:paddingStart="8dp"
                             android:paddingEnd="8dp"
@@ -80,7 +80,38 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardViewUsername"
+                    android:id="@+id/cardViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:hint="Email"
+                            android:inputType="textWebEmailAddress"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textColorHint="#808080"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewPassword"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginBottom="16dp"
@@ -110,12 +141,43 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewConpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp">
+
+                        <EditText
+                            android:id="@+id/etConpassword"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:background="@null"
+                            android:hint="Confirm Password"
+                            android:inputType="textPassword"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:textColorHint="#808080"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnSignup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/primary"
-                    android:text="Login"
+                    android:text="Signup"
                     app:cornerRadius="12dp"/>
 
             </LinearLayout>
@@ -131,7 +193,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? "
+                android:text="Already have an account?"
                 android:textColor="@android:color/white"/>
 
             <TextView
@@ -139,7 +201,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Sign Up"
+                android:text="Log in"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"/>
         </LinearLayout>
