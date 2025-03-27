@@ -3,6 +3,7 @@ package com.example.fixcrew
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,11 +21,20 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val tvSignup = findViewById<TextView>(R.id.tvSignup)
 
         btnLogin.setOnClickListener{
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
+
+        tvSignup.setOnClickListener{
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
     }
 }

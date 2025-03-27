@@ -131,12 +131,14 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cvClean"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp">
 
                     <ImageView
+
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="12dp"

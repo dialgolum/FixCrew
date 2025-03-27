@@ -197,9 +197,11 @@
                 android:textColor="@android:color/white"/>
 
             <TextView
-                android:id="@+id/tvSignup"
+                android:id="@+id/tvLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginStart="5dp"
                 android:text="Log in"
                 android:textColor="@android:color/white"
